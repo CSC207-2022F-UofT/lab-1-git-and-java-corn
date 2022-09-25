@@ -24,7 +24,13 @@ public class IntroLabTest {
         String actual = IntroLab.exampleStudent();
         assertEquals(expected, actual);
     }
-
+    @Test(timeout = 10)
+    public void testfungrick() {
+        String expected = "Hello! My name is Ricky! " +
+                "I like dogs more than cats! CSC207!";
+        String actual = IntroLab.fungrick();
+        assertEquals(expected, actual);
+    }
     /* TODO: Write a test case for the method you wrote in IntroLab.
      *       If done properly, you should be able to run IntroLabTest and see
      *       the test results.
